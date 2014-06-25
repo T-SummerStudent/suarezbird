@@ -358,7 +358,7 @@ var Share = me.GUI_Object.extend({
 
   onClick: function(event) {
     var shareText = 'Just scored ' + game.data.steps + ' points on Suarez Bird! Try online here!';
-    var url = 'http://ellisonleao.github.io/clumsy-bird/';
+    var url = 'http://www.suarezbird.com';
     FB.ui(
       {
        method: 'feed',
@@ -389,8 +389,8 @@ var Tweet = me.GUI_Object.extend({
 
   onClick: function(event) {
     var shareText = 'Just scored ' + game.data.steps + ' points on Suarez Bird! Try online here!';
-    var url = 'http://ellisonleao.github.io/clumsy-bird/';
-    var hashtags = 'clumsybird,melonjs'
+    var url = 'http://www.suarezbird.com';
+    var hashtags = 'suarezbird'
     window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Tweet!', 'height=300,width=400')
     return false;
   }
